@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MobileWGUApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_term_listing">TermListing</string>
+    <string name="title_activity_notes">Notes</string>
+    <string name="title_activity_add_term">add_term</string>
+    <string name="title_activity_add_new_term">add_new_term</string>
+    <string name="title_activity_add_new_term_fragment">add_new_term_fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_new_course">add_new_course</string>
+    <string name="title_activity_add_new_assessment">add_new_assessment</string>
+    <string name="title_activity_course_detail">course_detail</string>
+    <string name="title_activity_edit_term_detials">editTermDetials</string>
+    <string name="title_activity_edit_course_detail">EditCourseDetail</string>
+    <string name="title_activity_edit_assessment_detail">EditAssessmentDetail</string>
+    <string name="title_activity_mentor_listing">MentorListing</string>
+    <string name="title_activity_mentor_detail">MentorDetail</string>
+    <string name="title_activity_edit_mentor_detail">EditMentorDetail</string>
+    <string name="title_activity_add_new_mentor">AddNewMentor</string>
+    <string name="title_activity_course_notes">Course Notes</string>
+    <string name="start_date">Start Date:</string>
+    <string name="course_name">Course Name</string>
+    <string name="end_date">End Date:</string>
+    <string name="assessment_name">Assessment Name</string>
+    <string name="assessment_date">Assessment Date:</string>
+    <string name="start_time">Start Time:</string>
+    <string name="mentor_name">Mentor Name:</string>
+    <string name="phone_number">Phone Number(s):</string>
+    <string name="email_address">Email Address(es):</string>
+    <string name="help">Help</string>
+</resources>

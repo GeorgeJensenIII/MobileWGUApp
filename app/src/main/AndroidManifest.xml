@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myjensenfamily.mobilewguapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AssessmentDetail"
+            android:parentActivityName=".AssessmentListing" />
+        <activity
+            android:name=".TermDetail"
+            android:parentActivityName=".TermListing" />
+        <activity
+            android:name=".AssessmentListing"
+            android:parentActivityName=".CourseDetail" />
+        <activity
+            android:name=".CourseListing"
+            android:parentActivityName=".TermDetail"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".AlertActivity" android:theme="@style/Theme.AppCompat.Translucent">
+        </activity>
+
+        <activity
+            android:name=".TermListing"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddNewTerm"
+            android:label="Add New Term"
+            android:parentActivityName=".TermListing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddNewCourse"
+            android:label="@string/title_activity_add_new_course"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddNewAssessment"
+            android:label="@string/title_activity_add_new_assessment"
+            android:parentActivityName=".AssessmentListing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CourseDetail"
+            android:label="Course Detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditTermDetails"
+            android:label="@string/title_activity_edit_term_detials"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditCourseDetail"
+            android:label="@string/title_activity_edit_course_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditAssessmentDetail"
+            android:label="@string/title_activity_edit_assessment_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MentorListing"
+            android:label="@string/title_activity_mentor_listing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MentorDetail"
+            android:label="@string/title_activity_mentor_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditMentorDetail"
+            android:label="@string/title_activity_edit_mentor_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddNewMentor"
+            android:label="@string/title_activity_add_new_mentor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Notes"
+            android:label="@string/title_activity_notes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CourseNotes"
+            android:label="@string/title_activity_course_notes"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

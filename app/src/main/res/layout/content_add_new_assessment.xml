@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddNewAssessment"
+    tools:showIn="@layout/activity_add_new_assessment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/assessment_name"
+        android:textSize="20dp"
+        android:id="@+id/assessmentNameTitle"
+        android:layout_alignParentTop="true"
+        />
+
+    <EditText
+        android:id="@+id/assessmentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assessmentNameTitle"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/assessment_date"
+        android:id="@+id/dateTitle"
+        android:layout_below="@id/assessmentName"/>
+
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateTitle"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_time"
+        android:textSize="20dp"
+        android:layout_below="@id/editTextDate"
+        android:id="@+id/startTimeTitle"/>
+
+
+    <EditText
+        android:id="@+id/editTextStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startTimeTitle"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextStartTime"
+        android:spinnerMode="dropdown"
+        android:id="@+id/assessmentType"/>
+
+    <Button
+        android:id="@+id/addAssessmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Assessment"
+        android:layout_below="@id/assessmentType"/>
+
+</android.widget.RelativeLayout>

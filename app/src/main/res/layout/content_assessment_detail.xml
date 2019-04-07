@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddNewAssessment"
+    tools:showIn="@layout/activity_assessment_detail">
+
+
+    <TextView
+        android:id="@+id/assessmentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="24dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assessmentName"
+        android:text="\nStart Date/Time:"
+        android:textSize="20dp"
+        android:id="@+id/startDateTitle"/>
+
+
+    <TextView
+        android:id="@+id/assessmentDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startDateTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/assessmentStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assessmentDate"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assessmentStartTime"
+        android:id="@+id/assessmentType"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/assessmentScoreTitle"
+        android:textSize="20dp"
+        android:text="\nScore: "
+        android:layout_below="@id/assessmentType"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assessmentScoreTitle"
+        android:id="@+id/assessmentScore"
+        android:textSize="20dp"/>
+
+</android.widget.RelativeLayout>

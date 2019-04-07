@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".AddNewTerm"
+        tools:showIn="@layout/activity_add_new_mentor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/mentor_name"
+            android:textSize="20dp"
+            android:id="@+id/mentorNameTitle"
+            />
+
+        <EditText
+            android:id="@+id/mentorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mentorNameTitle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textSize="20dp"
+            android:id="@+id/phoneNumberTitle"
+            android:layout_below="@id/mentorName"
+            />
+
+        <EditText
+            android:id="@+id/mentorPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneNumberTitle"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email_address"
+            android:textSize="20dp"
+            android:id="@+id/emailAddressTitle"
+            android:layout_below="@id/mentorPhoneNumber"/>
+
+        <EditText
+            android:id="@+id/mentorEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailAddressTitle"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/addMentor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mentorEmailAddress"
+            android:layout_centerHorizontal="true"
+            android:text="Add Mentor"/>
+</android.widget.RelativeLayout>
